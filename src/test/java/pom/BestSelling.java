@@ -1,0 +1,37 @@
+package pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class BestSelling 
+{
+	@FindBy(xpath="//button[@class='popover-button hidden-pocket']")
+	private WebElement sort;
+	
+	@FindBy(xpath="//span[text()='Date, old to new']")
+	private WebElement select;
+	
+	@FindBy(xpath="//a[text()='Womens Beige Printed Top']")
+	private WebElement product;
+	
+	public BestSelling(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void sortSelling()
+	{
+		sort.click();
+	}
+	public void selectOne()
+	{
+		select.click();
+	}
+	public void clickProduct()
+	{
+		product.click();
+	}
+
+}
