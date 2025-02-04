@@ -3,6 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="testscripts.VerifyingTheFunctionality">
+        <methods>
+          <include name="closeApp"/>
+          <include name="openApp"/>
+          <include name="functionality"/>
+        </methods>
+      </class> <!-- testscripts.VerifyingTheFunctionality -->
+      <class name="testscripts.AddingTheProductWomenHoodedJackets">
+        <methods>
+          <include name="closeApp"/>
+          <include name="hoodedJackets"/>
+          <include name="openApp"/>
+        </methods>
+      </class> <!-- testscripts.AddingTheProductWomenHoodedJackets -->
       <class name="testscripts.AddingTheProductToCartTestCase_09">
         <methods>
           <include name="closeApp"/>
@@ -10,20 +24,13 @@
           <include name="addToCart"/>
         </methods>
       </class> <!-- testscripts.AddingTheProductToCartTestCase_09 -->
-      <class name="testscripts.CheckingPincode">
+      <class name="testscripts.WomenWhishlistWithoutLogin">
         <methods>
+          <include name="womenWhislist"/>
           <include name="closeApp"/>
           <include name="openApp"/>
-          <include name="checkPincode"/>
         </methods>
-      </class> <!-- testscripts.CheckingPincode -->
-      <class name="testscripts.AddingTheProductOfHomeFurnishing">
-        <methods>
-          <include name="closeApp"/>
-          <include name="addingProduct"/>
-          <include name="openApp"/>
-        </methods>
-      </class> <!-- testscripts.AddingTheProductOfHomeFurnishing -->
+      </class> <!-- testscripts.WomenWhishlistWithoutLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

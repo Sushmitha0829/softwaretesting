@@ -40,14 +40,13 @@ public class UserAccount_Page
 	@FindBy(xpath="//a[text()='Addresses']")
 	private WebElement address;
 	
-	@FindBy(xpath="//a[@class='header__icon-wrapper tap-area ']")
+	@FindBy(xpath="(//a[@class='header__icon-wrapper tap-area '])[2]")
 	private WebElement cart;
 	
-	@FindBy(xpath="//a[@class='button button--primary']")
+	@FindBy(xpath="//a[text()='Start shopping']")
 	private WebElement start;
 	
-	@FindBy(xpath="//a[text()='Gift Card']")
-	private WebElement card;
+	
 	
 	
 	
@@ -120,10 +119,7 @@ public class UserAccount_Page
 	{
 		view.click();
 	}
-	public void giftCard()
-	{
-		card.click();
-	}
+	
 
 	
 

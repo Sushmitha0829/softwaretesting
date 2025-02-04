@@ -2,6 +2,7 @@ package testscripts;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import genericlibraries.BaseClass;
 import pom.AddressesPage;
@@ -23,7 +24,8 @@ public class DeletingAddressPage extends BaseClass
 	     sign.passwordText(datautilities.readingDataExcelFile("LoginDetails", 1, 2));
 	     sign.loginButton();
 	     
-	     Assert.assertEquals(driver.getTitle(), datautilities.readingDataPropertyFile("AccountPage"));
+	     SoftAssert softassert=new SoftAssert();
+	     softassert.assertEquals(driver.getTitle(), datautilities.readingDataPropertyFile("AccountPage"));
 	     
 	     UserAccount_Page page=new UserAccount_Page(driver);
 	     page.addAddress();

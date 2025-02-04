@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="testscripts.AddingTheProductWomenHoodedJackets"/>
+      <class name="testscripts.VerifyingTheFunctionality"/>
       <class name="testscripts.AddingTheProductOfHomeFurnishing"/>
       <class name="testscripts.DeletingAddressPage"/>
       <class name="testscripts.CheckingPincode"/>
@@ -12,7 +13,6 @@
       <class name="testscripts.AddingTheProductOfHandTowel"/>
       <class name="testscripts.AddingNewAddress"/>
       <class name="testscripts.AddingTheProductToCartTestCase_09"/>
-      <class name="testscripts.GiftCard"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

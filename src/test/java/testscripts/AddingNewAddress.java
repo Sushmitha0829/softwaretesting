@@ -1,5 +1,7 @@
 package testscripts;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,7 +12,8 @@ import pom.MonteCarlo_SigninPage;
 import pom.UserAccount_Page;
 
 public class AddingNewAddress extends BaseClass
-{
+{ 
+	
 	@Test
 	public void addAddress() throws Exception
 	{

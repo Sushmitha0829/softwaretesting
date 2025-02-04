@@ -13,8 +13,14 @@ public class BestSelling
 	@FindBy(xpath="//span[text()='Date, old to new']")
 	private WebElement select;
 	
+	@FindBy(xpath="//span[text()='Price, high to low']")
+	private WebElement sortingfromhightolow;
+	
 	@FindBy(xpath="//a[text()='Womens Beige Printed Top']")
 	private WebElement product;
+	
+	@FindBy(xpath="//a[contains(text(),'300 TC Cotton ')]")
+	private WebElement clickproduct;
 	
 	public BestSelling(WebDriver driver)
 	{
@@ -29,9 +35,17 @@ public class BestSelling
 	{
 		select.click();
 	}
+	public void sortingFromHighToLow()
+	{
+		sortingfromhightolow.click();
+	}
 	public void clickProduct()
 	{
 		product.click();
+	}
+	public void clickProductBed()
+	{
+		clickproduct.click();
 	}
 
 }

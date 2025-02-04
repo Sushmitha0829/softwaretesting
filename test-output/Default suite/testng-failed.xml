@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.WomenWhishlistWithoutLogin">
+      <class name="testscripts.VerifyingTheFunctionality">
         <methods>
-          <include name="womenWhislist"/>
           <include name="closeApp"/>
           <include name="openApp"/>
+          <include name="functionality"/>
         </methods>
-      </class> <!-- testscripts.WomenWhishlistWithoutLogin -->
+      </class> <!-- testscripts.VerifyingTheFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

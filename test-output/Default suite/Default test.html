@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 03 18:16:20 IST 2025</td>
+<td>Started on:</td><td>Tue Feb 04 21:00:37 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28458 ms)</td>
+<tr><td>Total time:</td><td>60 seconds (60803 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testscripts.WomenWhishlistWithoutLogin.womenWhislist()'><b>womenWhislist</b><br>Test class: testscripts.WomenWhishlistWithoutLogin</td>
+<td title='testscripts.VerifyingTheFunctionality.functionality()'><b>functionality</b><br>Test class: testscripts.VerifyingTheFunctionality</td>
 <td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: MicrosoftEdge=132.0.2957.140)
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [aa72986ad437a62ad097353061e81aa2, sendKeysToElement {id=f.8581C4E31F6F7DE3C9B435493BD578D2.d.6C7BFFB421888E37CB5EF725EC5706A4.e.528, value=[Ljava.lang.CharSequence;@12ffd1de}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.140, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61230}, msedge: {msedgedriverVersion: 132.0.2957.140 (a81e27b375d..., userDataDir: C:\Users\bs114100\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61230/devtoo..., se:cdpVersion: 132.0.2957.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (aa72986ad437a62ad097353061e81aa2)] -&gt; name: filter.v.price.gte]
-Session ID: aa72986ad437a62ad097353061e81aa2
+Command: [0e892d91112719bc6a43603316fb9b10, clickElement {id=f.3F3ABF0A32CEBCFB28E813D101C37B49.d.245183BCEC98CE242AE4F7EAAD365725.e.423}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.140, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58310}, msedge: {msedgedriverVersion: 132.0.2957.140 (a81e27b375d..., userDataDir: C:\Users\bs114100\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58310/devtoo..., se:cdpVersion: 132.0.2957.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (0e892d91112719bc6a43603316fb9b10)] -&gt; xpath: //button[text()=&apos;Add to Cart&apos;]]
+Session ID: 0e892d91112719bc6a43603316fb9b10
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -96,13 +96,13 @@ Session ID: aa72986ad437a62ad097353061e81aa2
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at pom.WomenStoleShawls.setnum(WomenStoleShawls.java:44)
-	at testscripts.WomenWhishlistWithoutLogin.womenWhislist(WomenWhishlistWithoutLogin.java:26)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pom.WishListPage.addCart(WishListPage.java:37)
+	at testscripts.VerifyingTheFunctionality.functionality(VerifyingTheFunctionality.java:47)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -129,16 +129,16 @@ Session ID: aa72986ad437a62ad097353061e81aa2
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1329492804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1329492804'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+</pre></div><a href='#' onClick='toggleBox("stack-trace1377546660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1377546660'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: MicrosoftEdge=132.0.2957.140)
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [aa72986ad437a62ad097353061e81aa2, sendKeysToElement {id=f.8581C4E31F6F7DE3C9B435493BD578D2.d.6C7BFFB421888E37CB5EF725EC5706A4.e.528, value=[Ljava.lang.CharSequence;@12ffd1de}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.140, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61230}, msedge: {msedgedriverVersion: 132.0.2957.140 (a81e27b375d..., userDataDir: C:\Users\bs114100\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61230/devtoo..., se:cdpVersion: 132.0.2957.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (aa72986ad437a62ad097353061e81aa2)] -&gt; name: filter.v.price.gte]
-Session ID: aa72986ad437a62ad097353061e81aa2
+Command: [0e892d91112719bc6a43603316fb9b10, clickElement {id=f.3F3ABF0A32CEBCFB28E813D101C37B49.d.245183BCEC98CE242AE4F7EAAD365725.e.423}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.140, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58310}, msedge: {msedgedriverVersion: 132.0.2957.140 (a81e27b375d..., userDataDir: C:\Users\bs114100\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58310/devtoo..., se:cdpVersion: 132.0.2957.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (0e892d91112719bc6a43603316fb9b10)] -&gt; xpath: //button[text()=&apos;Add to Cart&apos;]]
+Session ID: 0e892d91112719bc6a43603316fb9b10
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -150,13 +150,13 @@ Session ID: aa72986ad437a62ad097353061e81aa2
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at pom.WomenStoleShawls.setnum(WomenStoleShawls.java:44)
-	at testscripts.WomenWhishlistWithoutLogin.womenWhislist(WomenWhishlistWithoutLogin.java:26)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pom.WishListPage.addCart(WishListPage.java:37)
+	at testscripts.VerifyingTheFunctionality.functionality(VerifyingTheFunctionality.java:47)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -184,8 +184,8 @@ Session ID: aa72986ad437a62ad097353061e81aa2
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>10</td>
-<td>testscripts.WomenWhishlistWithoutLogin@1b2abca6</td></tr>
+<td>43</td>
+<td>testscripts.VerifyingTheFunctionality@6e20b53a</td></tr>
 </table><p>
 </body>
 </html>

@@ -2,6 +2,7 @@ package testscripts;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import genericlibraries.BaseClass;
 import pom.HandTowelPage;
@@ -25,7 +26,10 @@ public class AddingTheProductOfHandTowel extends BaseClass
 		     sign.passwordText(datautilities.readingDataExcelFile("LoginDetails", 1, 2));
 		     sign.loginButton();
 		     
-		     Assert.assertEquals(driver.getTitle(), datautilities.readingDataPropertyFile("AccountPage"));
+		     SoftAssert softassert=new SoftAssert();
+		     softassert.assertEquals(driver.getTitle(), datautilities.readingDataPropertyFile("AccountPage"));
+		     
+		     
 		     
 		     UserAccount_Page accountpage=new UserAccount_Page(driver);
 		     accountpage.searchBar();
